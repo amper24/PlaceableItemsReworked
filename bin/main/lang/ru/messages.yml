@@ -1,0 +1,23 @@
+# Русская локализация для PlaceableItemsReworked
+
+# Префикс плагина (MiniMessage формат)
+prefix: "<dark_gray>[<gold>Placeable<dark_gray>] <reset>"
+
+# Общие сообщения
+general:
+  no-permission: "<red>У вас нет прав на использование этой команды!"
+  player-only: "<red>Только игроки могут использовать эту команду!"
+  no-item: "<red>Вы должны держать предмет в руке!"
+
+# Команда /tg
+tg:
+  added: "<green>Предмет теперь можно устанавливать! Используйте /tg снова чтобы убрать."
+  removed: "<green>Свойства размещения удалены с предмета!"
+  cannot-toggle: "<red>Этот предмет нельзя переключить командой /tg!"
+
+# Команда /cplace
+cplace:
+  preset-applied: "<green>Пресет '<gold>%s<green>' применен к предмету!"
+  preset-not-found: "<red>Пресет '<gold>%s<red>' не найден!"
+  preset-list-empty: "<red>Нет доступных пресетов"
+  reload: "<green>Конфигурация перезагружена!" 

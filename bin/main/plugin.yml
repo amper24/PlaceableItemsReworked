@@ -1,0 +1,26 @@
+name: PlaceableItemsReworked
+version: '1.0'
+main: dev.moonaticks.placeableItemsReworked.PlaceableItemsReworked
+api-version: '1.21'
+commands:
+  tg:
+    description: Toggle placement properties on/off for items
+    usage: /tg
+    permission: placeableitems.tg
+    aliases: [toggle]
+  cplace:
+      description: Advanced placement settings editor
+      usage: /cplace <subcommand>
+      permission: placeableitems.admin
+      aliases: [cpl, configplace]
+
+permissions:
+  placeableitems.tg:
+    description: Allows using /tg command to toggle placement properties
+    default: true
+  
+  placeableitems.admin:
+    description: Allows using /cplace command and reload configuration
+    default: op
+    children:
+      placeableitems.tg: true

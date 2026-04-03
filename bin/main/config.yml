@@ -1,0 +1,41 @@
+# PlaceableItemsReworked Configuration
+
+# Язык плагина (en, ru)
+language: en
+#Арт в консоли ^^
+enable-ascii-art: true
+# Настройки по умолчанию для команды /tg (для обычных игроков)
+default-fallback-for-tg:
+  default:
+    # Фиксированная позиция (true - центр блока, false - свободно)
+    fixed: false
+    
+    # Центрирование предмета
+    centered: false
+    
+    # Масштаб предмета
+    scale: 1.0
+    
+    # Смещение от поверхности (только для free режима)
+    offset: 0.5
+    
+    # Хитбокс предмета
+    hitbox:
+      x: 0.25
+      y: 0.5
+      z: 0.25
+    
+    # Тип размещения (ALL, FLOOR, CEILING, WALL, FLOOR_AND_WALL, CEILING_AND_WALL)
+    placeType: ALL
+
+    # количество для поломки
+    breakCount: 3
+    
+    # Звуки предмета
+    sounds:
+      # Звук при размещении
+      place: "minecraft:block.wool.place"
+      # Звук при разрушении/подборе
+      break: "minecraft:block.wool.break"
+      # Звук при взаимодействии (правый клик) - пусто, если не нужен
+      interact: ""

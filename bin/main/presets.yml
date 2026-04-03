@@ -1,0 +1,292 @@
+# Пресеты для PlaceableItemsReworked
+# Можно редактировать, добавлять свои, удалять ненужные
+
+presets:
+  # Стандартный пресет (базовые настройки)
+  default:
+    fixed: false
+    centered: false
+    scale: 1.0
+    offset: 0.5
+    hitbox:
+      x: 0.25
+      y: 0.5
+      z: 0.25
+    placeType: ALL
+    breakCount: 3
+    sounds:
+      place: "minecraft:block.wool.place"
+      break: "minecraft:block.wool.break"
+      interact: ""
+
+  # Картина на стену
+  painting:
+    fixed: true
+    centered: true
+    scale: 1.0
+    offset: 0.0
+    hitbox:
+      x: 1.0
+      y: 1.0
+      z: 0.2
+    placeType: WALL
+    breakCount: 3
+    sounds:
+      place: "minecraft:entity.painting.place"
+      break: "minecraft:entity.painting.break"
+      interact: ""
+
+  # Рамка для предметов
+  item_frame:
+    fixed: true
+    centered: true
+    scale: 0.8
+    offset: 0.1
+    hitbox:
+      x: 0.8
+      y: 0.8
+      z: 0.1
+    placeType: WALL
+    breakCount: 3
+    sounds:
+      place: "minecraft:entity.item_frame.place"
+      break: "minecraft:entity.item_frame.break"
+      interact: "minecraft:entity.item_frame.add_item"
+
+  # Декоративный предмет (свободное размещение)
+  decoration:
+    fixed: false
+    centered: false
+    scale: 1.2
+    offset: 0.3
+    hitbox:
+      x: 0.6
+      y: 0.6
+      z: 0.6
+    placeType: ALL
+    breakCount: 3
+    sounds:
+      place: "minecraft:block.generic.place"
+      break: "minecraft:block.generic.break"
+      interact: ""
+
+  # Напольный предмет (ваза, цветок и т.д.)
+  floor_item:
+    fixed: true
+    centered: true
+    scale: 1.0
+    offset: 0.0
+    hitbox:
+      x: 0.8
+      y: 0.5
+      z: 0.8
+    placeType: FLOOR
+    breakCount: 3
+    sounds:
+      place: "minecraft:block.wool.place"
+      break: "minecraft:block.wool.break"
+      interact: ""
+
+  # Потолочный предмет (люстра, подвес)
+  ceiling_item:
+    fixed: true
+    centered: true
+    scale: 1.0
+    offset: 0.0
+    hitbox:
+      x: 0.8
+      y: 0.5
+      z: 0.8
+    placeType: CEILING
+    breakCount: 3
+    sounds:
+      place: "minecraft:block.wool.place"
+      break: "minecraft:block.wool.break"
+      interact: ""
+
+  # Табличка на стену
+  sign:
+    fixed: true
+    centered: true
+    scale: 1.0
+    offset: 0.0
+    hitbox:
+      x: 1.0
+      y: 0.3
+      z: 0.1
+    placeType: WALL
+    breakCount: 3
+    sounds:
+      place: "minecraft:block.sign.place"
+      break: "minecraft:block.sign.break"
+      interact: ""
+
+  # Ковер на пол
+  carpet:
+    fixed: true
+    centered: true
+    scale: 1.0
+    offset: 0.0
+    hitbox:
+      x: 1.0
+      y: 0.1
+      z: 1.0
+    placeType: FLOOR
+    breakCount: 3
+    sounds:
+      place: "minecraft:block.wool.place"
+      break: "minecraft:block.wool.break"
+      interact: ""
+
+  # Люстра на потолок
+  chandelier:
+    fixed: true
+    centered: true
+    scale: 1.0
+    offset: 0.2
+    hitbox:
+      x: 0.7
+      y: 0.7
+      z: 0.7
+    placeType: CEILING
+    breakCount: 3
+    sounds:
+      place: "minecraft:block.chain.place"
+      break: "minecraft:block.chain.break"
+      interact: ""
+
+  # Книга на полке (на стену)
+  book:
+    fixed: true
+    centered: true
+    scale: 0.6
+    offset: 0.1
+    hitbox:
+      x: 0.5
+      y: 0.7
+      z: 0.2
+    placeType: WALL
+    breakCount: 3
+    sounds:
+      place: "minecraft:item.book.page_turn"
+      break: "minecraft:entity.item.break"
+      interact: "minecraft:item.book.page_turn"
+
+  # Тарелка на стол (на пол)
+  plate:
+    fixed: true
+    centered: true
+    scale: 0.8
+    offset: 0.0
+    hitbox:
+      x: 0.7
+      y: 0.1
+      z: 0.7
+    placeType: FLOOR
+    breakCount: 3
+    sounds:
+      place: "minecraft:block.stone.place"
+      break: "minecraft:block.stone.break"
+      interact: "minecraft:entity.armor_stand.place"
+
+  # Меч на стену
+  sword:
+    fixed: true
+    centered: true
+    scale: 1.0
+    offset: 0.1
+    hitbox:
+      x: 1.2
+      y: 0.3
+      z: 0.2
+    placeType: WALL
+    breakCount: 3
+    sounds:
+      place: "minecraft:entity.iron_golem.attack"
+      break: "minecraft:entity.item.break"
+      interact: "minecraft:entity.player.attack.sweep"
+
+  # Маленький предмет (монетка, камень)
+  small_item:
+    fixed: false
+    centered: false
+    scale: 0.5
+    offset: 0.1
+    hitbox:
+      x: 0.3
+      y: 0.3
+      z: 0.3
+    placeType: ALL
+    breakCount: 3
+    sounds:
+      place: "minecraft:block.stone.place"
+      break: "minecraft:block.stone.break"
+      interact: ""
+
+  # Большой предмет (статуя)
+  statue:
+    fixed: true
+    centered: true
+    scale: 2.0
+    offset: 0.0
+    hitbox:
+      x: 1.5
+      y: 2.0
+      z: 1.5
+    placeType: FLOOR
+    breakCount: 5
+    sounds:
+      place: "minecraft:block.stone.place"
+      break: "minecraft:block.stone.break"
+      interact: ""
+
+  # Стеклянный предмет
+  glass:
+    fixed: false
+    centered: true
+    scale: 1.0
+    offset: 0.0
+    hitbox:
+      x: 0.8
+      y: 0.8
+      z: 0.8
+    placeType: ALL
+    breakCount: 2
+    sounds:
+      place: "minecraft:block.glass.place"
+      break: "minecraft:block.glass.break"
+      interact: ""
+
+  # Деревянный предмет
+  wooden:
+    fixed: false
+    centered: false
+    scale: 1.0
+    offset: 0.2
+    hitbox:
+      x: 0.7
+      y: 0.7
+      z: 0.7
+    placeType: ALL
+    breakCount: 3
+    sounds:
+      place: "minecraft:block.wood.place"
+      break: "minecraft:block.wood.break"
+      interact: ""
+
+  # Металлический предмет
+  metal:
+    fixed: false
+    centered: false
+    scale: 1.0
+    offset: 0.1
+    hitbox:
+      x: 0.6
+      y: 0.6
+      z: 0.6
+    placeType: ALL
+    breakCount: 5
+    sounds:
+      place: "minecraft:block.metal.place"
+      break: "minecraft:block.metal.break"
+      interact: "minecraft:block.note_block.iron_xylophone"

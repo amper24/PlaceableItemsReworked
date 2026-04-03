@@ -1,0 +1,23 @@
+# English localization for PlaceableItemsReworked
+
+# Префикс плагина (MiniMessage формат)
+prefix: "<dark_gray>[<gold>Placeable<dark_gray>] <reset>"
+
+# Общие сообщения
+general:
+  no-permission: "<red>You don't have permission to use this command!"
+  player-only: "<red>Only players can use this command!"
+  no-item: "<red>You need to hold an item in your hand!"
+
+# Команда /tg
+tg:
+  added: "<green>Item can now be placed! Use /tg again to remove."
+  removed: "<green>Placement properties removed from item!"
+  cannot-toggle: "<red>This item cannot be toggled with /tg!"
+
+# Команда /cplace
+cplace:
+  preset-applied: "<green>Preset '<gold>%s<green>' applied to your item!"
+  preset-not-found: "<red>Preset '<gold>%s<red>' not found!"
+  preset-list-empty: "<red>No presets available"
+  reload: "<green>Configuration reloaded!"
