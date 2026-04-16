@@ -53,6 +53,7 @@ public class ConfigManager {
     private void loadManagers() {
         this.langManager = new LangManager(plugin, this); // Теперь это безопасно
         this.presetManager = new PresetManager(plugin);
+        this.langManager.reload();
     }
     
     /**
